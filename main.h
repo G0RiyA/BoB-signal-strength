@@ -12,7 +12,7 @@ typedef struct __attribute__((__packed__)) RadioHeader {
   uint8_t revision;
   uint8_t pad;
   uint16_t length;
-  unsigned long long TSFT:1, Flags:1, Rate:1, Channel:1, FHSS:1, Signal:1, other_flag:57, Ext:1;
+  unsigned TSFT:1, Flags:1, Rate:1, Channel:1, FHSS:1, Signal:1, other_flag:25, Ext:1;
   uint8_t fields[];
 } radio_header_t;
 
